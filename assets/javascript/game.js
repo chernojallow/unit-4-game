@@ -12,11 +12,15 @@ var resetAndStart = function() {
 
     $(".crystals").empty();
 
-    var images =[ "./assets/images/crystal1.jpeg", "assets/images/crystal2.jpeg", "assets/images/crystal3.jpeg", "assets/images/crystal4.jpeg"];
+    var images =[ "assets/images/crystal1.jpeg", 
+                  "assets/images/crystal2.jpeg",
+                  "assets/images/crystal3.jpeg",
+                  "assets/images/crystal4.jpeg"
+              ] ;
 
-randomResult =Math.floor(Math.random() * 69 ) + 30;
+     randomResult =Math.floor(Math.random() * 69 ) + 30;
 
-$("#result").html('Random result:' + randomResult);
+     $(".result").html( randomResult);
 
 for ( var i = 0; i < 4; i++) {
     
@@ -24,23 +28,23 @@ for ( var i = 0; i < 4; i++) {
     //console.log(random);
     
     var crystal = $("<div>");
-      crystal.attr(images[i]);
+      //crystal.attr("src",  images[i]);
     crystal.attr({"class": 'crystal',
                   "random-number": random
-                   
+                
 });
-   
     crystal.css({
-        "background-image ":("" + images[i] + ""),
-        "background-size" :"cover"
-    })
+         "background-image":"url('" + images[i] + "')",
+          "background-size": "cover"
+
+    });
    
        // crystal.html(random);
 
     $(".crystals").append(crystal);
    
 }
-   $("#previous").html("Total score" + previous);
+   $(".previous").html(previous);
 }
   resetAndStart();
 
@@ -49,20 +53,21 @@ for ( var i = 0; i < 4; i++) {
 
   $(document).on('click', ".crystal", function() {
 
+
     var num = parseInt($(this).attr('random-number'));
     previous +=num;
    console.log(previous);
-   $("#previous").html(previous);
+   $(".previous").html(previous);
 
    if (previous > randomResult){
        losses++;
-       $("#lost").html("You lost" + losses);
+       $(".lost").html("You lost" + losses);
        previous = 0;
        resetAndStart();
    }
    else if (previous === randomResult){
        wins++;
-       $("#win").html( "You win" + wins);
+       $(".win").html( "You win" + wins);
        previous = 0;
        resetAndStart();
    }

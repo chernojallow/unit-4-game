@@ -1,22 +1,89 @@
 
 
 
-.crystals {
+  .crystals {
     display: flex;
-    justify-content: 2px space-around;
+    justify-content:  space-around;
     align-items: center;
+    width: 400px;
 
 
-}
+} 
 
-.crystal {
-    border: 1px solid green;
-    height:200px;
+  .crystal {
+    border: green;
+    height:80px;
+    margin:10px;
     width:200px;
     
+    
+    
+ 
+    
+    
+} 
+ 
+ 
+ 
+
+  body {
+	background-image: url("../images/Body.jpg");
+	margin: 0px;
+	padding: 0px;
+} 
+
+
+.result {
+    background-color: green;
+    margin-top: 5px;
 }
 
-img{
-    width:50px;
-    
+p2{
+    background-color: green;
+  
 }
+
+ h2 {
+     float: left;
+     padding-top: 40px;
+ }
+
+  /* .jumbotron {
+	background-color: orange;
+	color: white;
+}    
+  
+.previous {
+	font-size: 30px;
+	background-color: #F8CF9C;
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 4px;
+}
+
+.win {
+	background-color: #9CE7F8;
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 4px;
+}
+
+.crystals {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.total-score {
+	color: white;
+	background-color: #4aaaa5;
+}
+
+.result {
+	color: white;
+	background-color: #4aaaa5;
+	font-size: 30px;
+}
+
+img {
+    width: 50px;
+}  */
