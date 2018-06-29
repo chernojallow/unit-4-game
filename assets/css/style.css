@@ -1,0 +1,22 @@
+
+
+
+.crystals {
+    display: flex;
+    justify-content: 2px space-around;
+    align-items: center;
+
+
+}
+
+.crystal {
+    border: 1px solid green;
+    height:200px;
+    width:200px;
+    
+}
+
+img{
+    width:50px;
+    
+}
