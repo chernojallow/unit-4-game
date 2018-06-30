@@ -3,77 +3,59 @@
 var wins = 0;
 var losses = 0;
 var randomResult;
-var previous = 0;
+var previousValue = 0;
 
-   //$(".crystal").attr('class', 'red');
+  var resetAndStart = function() {
+       $(".crystals").empty();
 
-var resetAndStart = function() {
+           var images =[ "assets/images/crystal8.jpeg", 
+                         "assets/images/crystal2.jpeg",
+                         "assets/images/crystal3.jpeg",
+                          "assets/images/crystal9.jpg"
+                      ] ;
 
-    $(".crystals").empty();
+    randomResult =Math.floor(Math.random() * 69 ) + 30;
+    $(".result").html( randomResult);
 
-    var images =[ "assets/images/crystal1.jpeg", 
-                  "assets/images/crystal2.jpeg",
-                  "assets/images/crystal3.jpeg",
-                  "assets/images/crystal4.jpeg"
-              ] ;
-
-     randomResult =Math.floor(Math.random() * 69 ) + 30;
-
-     $(".result").html( randomResult);
-
-for ( var i = 0; i < 4; i++) {
+    for ( var i = 0; i < 4; i++) {
+       var random = Math.floor(Math.random() * 11) +1;
     
-    var random = Math.floor(Math.random() * 11) +1;
-    //console.log(random);
-    
-    var crystal = $("<div>");
-      //crystal.attr("src",  images[i]);
-    crystal.attr({"class": 'crystal',
+     var crystal = $("<div>");
+     crystal.attr({"class": 'crystal',
                   "random-number": random
                 
-});
+    });
     crystal.css({
          "background-image":"url('" + images[i] + "')",
           "background-size": "cover"
 
     });
    
-       // crystal.html(random);
-
     $(".crystals").append(crystal);
-   
-}
-   $(".previous").html(previous);
+   }
+   $(".previous").html(previousValue);
 }
   resetAndStart();
 
-
-
-
   $(document).on('click', ".crystal", function() {
+     var number = parseInt($(this).attr('random-number'));
+     previousValue +=number;
+     console.log(previousValue);
+     $(".previous").html(previousValue);
 
-
-    var num = parseInt($(this).attr('random-number'));
-    previous +=num;
-   console.log(previous);
-   $(".previous").html(previous);
-
-   if (previous > randomResult){
+   if (previousValue > randomResult){
        losses++;
-       
        $(".win-lost-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses:  " + losses + "</p>");
-    
-       
-       
-       previous = 0;
+       $(".win-lost-counter").append("You lost!");
+       previousValue = 0;
        resetAndStart();
    }
-   else if (previous === randomResult){
-     
+
+   else if (previousValue === randomResult){
        wins++;
        $(".win-lost-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses:  " + losses + "</p>");
-      
-       previous = 0;
+       $(".win-lost-counter").append("You win!");
+       previousValue = 0;
        resetAndStart();
        
    }

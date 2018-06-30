@@ -1,4 +1,8 @@
 
+  body{
+     background-image:  url("../images/chernoImage.jpg");
+  }
+
 
 
   .crystals {
@@ -7,9 +11,7 @@
     align-items: center;
     width: 400px;
     margin-left:2px;
-    margin-top:-90px;
-
-
+    margin-top:-100px;
 } 
 
   .crystal {
@@ -17,39 +19,35 @@
     height:80px;
     margin:10px;
     width:200px;
-    
-       
-    
-} 
- 
- h2{
+    } 
+  h2{
      background-color: lightsalmon;
      width:250px;
      height:70px;
      text-align: center;
      padding-top:15px;
      margin-left:10px;
-     
- }
+     color: white;
+     }
 
-
-  .container {
-	background-image: url("../images/Body.jpg");
+.container {
+	background-image: url("../images/container.png");
 	margin: 20px;
-    padding: 0px;
+    margin-top:15px;
     margin-left:330px;
     width:700px;
+    border: 2px solid black;
+    } 
     
-} 
-
-
 .result {
     background-color: lightgreen;
-    margin-top: 5px;
+    margin-top: 7px;
     width:100px;
     height:100px;
     margin-left:10px;
-    padding:2px;
+    padding:10px;
+    font-size: 25px;
+    
   
 }
 
@@ -60,67 +58,30 @@
     margin-left:10px;
     color: lavender;
     padding:2px;
+    margin-top:-2px;
 }
 
 .previous{
     height:60px;
+    padding:10px;
+    font-size:25px;
 }
 
  .panel-body{
-     background-color: lightcoral;
+     background-color: lemonchiffon;
      width: 500px;
      margin-left:10px;
+     color: green;
     
  }
 
-
- .win-lost-counter {
+.win-lost-counter {
 	background-color: #9CE7F8;
-    width:100px;
+    width:80px;
     top:20px;
     margin-left:120px;
     position: relative;
     top:-100px;
-    height:95px;
+    height:100px;
     padding: 4px;
 }
-/*
-   .jumbotron {
-	background-color: orange;
-	color: white;
-}    
-  
-.previous {
-	font-size: 30px;
-	background-color: #F8CF9C;
-	border-style: solid;
-	border-color: #ddd;
-	border-width: 4px;
-}
-
-.win {
-	background-color: #9CE7F8;
-	border-style: solid;
-	border-color: #ddd;
-	border-width: 4px;
-}
-
-.crystals {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.total-score {
-	color: white;
-	background-color: #4aaaa5;
-}
-
-.result {
-	color: white;
-	background-color: #4aaaa5;
-	font-size: 30px;
-}
-
-img {
-    width: 50px;
-}  */
