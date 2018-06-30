@@ -85,3 +85,31 @@
     height:100px;
     padding: 4px;
 }
+
+
+
+.win-lost-counter {
+	background-color: #9CE7F8;
+    width:80px;
+    top:20px;
+    margin-left:120px;
+    position: relative;
+    top:-100px;
+    height:100px;
+    padding: 4px;
+}
+
+.p {
+	background-color: #9CE7F8;
+    width:80px;
+    top:20px;
+    margin-left:120px;
+    position: relative;
+    top:-100px;
+    height:100px;
+    padding: 4px;
+}
+
+
+
+

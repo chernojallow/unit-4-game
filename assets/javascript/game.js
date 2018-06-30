@@ -5,6 +5,7 @@ var losses = 0;
 var randomResult;
 var previousValue = 0;
 
+
   var resetAndStart = function() {
        $(".crystals").empty();
 
@@ -61,5 +62,6 @@ var previousValue = 0;
    }
  
 });
+
 
   
