@@ -6,6 +6,8 @@
     justify-content:  space-around;
     align-items: center;
     width: 400px;
+    margin-left:2px;
+    margin-top:-90px;
 
 
 } 
@@ -15,41 +17,72 @@
     height:80px;
     margin:10px;
     width:200px;
+    
        
     
 } 
  
- 
+ h2{
+     background-color: lightsalmon;
+     width:250px;
+     height:70px;
+     text-align: center;
+     padding-top:15px;
+     margin-left:10px;
+     
+ }
 
 
   .container {
 	background-image: url("../images/Body.jpg");
 	margin: 20px;
     padding: 0px;
+    margin-left:330px;
+    width:700px;
     
 } 
 
 
 .result {
-    background-color: green;
+    background-color: lightgreen;
     margin-top: 5px;
+    width:100px;
+    height:100px;
+    margin-left:10px;
+    padding:2px;
+  
 }
 
 .total-score, .previous{
     background-color: green;
     margin:10px;
-  
+    width: 120px;
+    margin-left:10px;
+    color: lavender;
+    padding:2px;
 }
 
- 
+.previous{
+    height:60px;
+}
+
+ .panel-body{
+     background-color: lightcoral;
+     width: 500px;
+     margin-left:10px;
+    
+ }
 
 
  .win-lost-counter {
 	background-color: #9CE7F8;
-	border-style: solid;
-	border-color: #ddd;
-    border-width: 4px;
-    
+    width:100px;
+    top:20px;
+    margin-left:120px;
+    position: relative;
+    top:-100px;
+    height:95px;
+    padding: 4px;
 }
 /*
    .jumbotron {

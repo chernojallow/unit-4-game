@@ -64,15 +64,15 @@ for ( var i = 0; i < 4; i++) {
        $(".win-lost-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses:  " + losses + "</p>");
     
        
-       //$(".win-lost-counter").html( " <p>losses: " + losses + "</p>");
+       
        previous = 0;
        resetAndStart();
    }
    else if (previous === randomResult){
      
        wins++;
-       
-       //$(".win-lost-counter").html( "<p> wins " + wins + "</p>");
+       $(".win-lost-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses:  " + losses + "</p>");
+      
        previous = 0;
        resetAndStart();
        
