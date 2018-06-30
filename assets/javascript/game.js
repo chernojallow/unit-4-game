@@ -2,7 +2,6 @@
 // global variables
 var wins = 0;
 var losses = 0;
-var counter
 var randomResult;
 var previous = 0;
 
@@ -61,17 +60,24 @@ for ( var i = 0; i < 4; i++) {
 
    if (previous > randomResult){
        losses++;
-       $(".lost").html("You lost" + losses);
+       
+       $(".win-lost-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses:  " + losses + "</p>");
+    
+       
+       //$(".win-lost-counter").html( " <p>losses: " + losses + "</p>");
        previous = 0;
        resetAndStart();
    }
    else if (previous === randomResult){
+     
        wins++;
-       $(".win").html( "You win" + wins);
+       
+       //$(".win-lost-counter").html( "<p> wins " + wins + "</p>");
        previous = 0;
        resetAndStart();
+       
    }
-
+ 
 });
 
   
