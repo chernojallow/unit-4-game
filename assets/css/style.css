@@ -34,7 +34,7 @@
 	background-image: url("../images/container.png");
 	margin: 20px;
     margin-top:15px;
-    margin-left:330px;
+   /* margin-left:330px; */
     width:700px;
     border: 2px solid black;
     } 
@@ -88,27 +88,6 @@
 
 
 
-.win-lost-counter {
-	background-color: #9CE7F8;
-    width:80px;
-    top:20px;
-    margin-left:120px;
-    position: relative;
-    top:-100px;
-    height:100px;
-    padding: 4px;
-}
-
-.p {
-	background-color: #9CE7F8;
-    width:80px;
-    top:20px;
-    margin-left:120px;
-    position: relative;
-    top:-100px;
-    height:100px;
-    padding: 4px;
-}
 
 
 
